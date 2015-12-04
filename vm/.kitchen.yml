@@ -12,6 +12,6 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[hirayama-env::default]
+      - recipe[ruby-study-env::default]
       - recipe[rails-env::default]
     attributes: {"ruby": {"version": "2.2.0"}}
