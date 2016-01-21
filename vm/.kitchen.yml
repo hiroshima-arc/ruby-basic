@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+#  require_chef_omnibus: 12.5.0
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[ruby-study-env::default]
+      - recipe[rails-env::default]
+    attributes: {"ruby": {"version": "2.2.0"}}
