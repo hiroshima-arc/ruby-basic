@@ -7,9 +7,10 @@ Rubyの基礎
 # 前提 #
 | ソフトウェア   | バージョン   | 備考        |
 |:---------------|:-------------|:------------|
-| vagrant        |1.8.7    |             |
 | ruby           |2.4.0p0  |             |
 | rbenv          |1.1.0-2  |             |
+| vagrant        |1.8.7    |             |
+| docker         |1.12.5    |             |
 
 # 構成 #
 ## 環境セットアップ
@@ -19,6 +20,11 @@ Rubyの基礎
     $ cd /vagrant
     $ bundle
     
+### Docker
+    
+    $ docker build -t hiroshima-arc/ruby-basic .
+    $ docker run -it --name app hiroshima-arc/ruby-basic
+        
 ## Rubyプログラミング
 + 2-1 Hello,Ruby
 + 2-2 変数と定数
