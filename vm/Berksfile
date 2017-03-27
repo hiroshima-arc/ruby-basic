@@ -1,7 +1,0 @@
-source "https://supermarket.chef.io"
-
-metadata
-
-cookbook 'ruby-study-env', path: './cookbooks/ruby-study-env'
-cookbook 'ruby-env', path: './cookbooks/ruby-env'
-cookbook 'rails-env', path: './cookbooks/rails-env'

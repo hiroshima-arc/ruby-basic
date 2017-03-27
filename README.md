@@ -7,10 +7,9 @@ Rubyの基礎
 # 前提 #
 | ソフトウェア   | バージョン   | 備考        |
 |:---------------|:-------------|:------------|
-| vagrant        |1.7.4    |             |
-| ruby           |2.2.1-p85    |             |
-| rbenv          |0.4.0        |             |
-
+| vagrant        |1.8.7    |             |
+| ruby           |2.4.0p0  |             |
+| rbenv          |1.1.0-2  |             |
 
 # 構成 #
 ## 環境セットアップ
@@ -18,6 +17,7 @@ Rubyの基礎
     $ vagrant up
     $ vagrant ssh
     $ cd /vagrant
+    $ bundle
     
 ## Rubyプログラミング
 + 2-1 Hello,Ruby
